@@ -2,7 +2,7 @@
 ~function (desW) {
     var winW = document.documentElement.clientWidth;
     var winH = document.documentElement.clientHeight;
-    if(winH<=550){
+    if(winH<=520){
         document.documentElement.style.fontSize = winW / desW * 85 + "px";
         $('.page1>h1>span').css({left:.4+'rem',bottom:.3+'rem'});
         return;
