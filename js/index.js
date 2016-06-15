@@ -3,7 +3,7 @@
     var winW = document.documentElement.clientWidth;
     var winH = document.documentElement.clientHeight;
     if(winH<=480){
-        document.documentElement.style.fontSize = winW / desW * 85 + "px";
+        document.documentElement.style.fontSize = winW / desW * 80 + "px";
         $('.page1>h1>span').css({left:.4+'rem',bottom:.3+'rem'});
         return;
     }
@@ -20,7 +20,6 @@ var mySwiper = new Swiper('.swiper-container', {
     lazyLoadingInPrevNext: true,
     onSlidePrevEnd: function () {
         step--;
-        console.log(step);
         if (step < 0) {
             step = 5;
         }
