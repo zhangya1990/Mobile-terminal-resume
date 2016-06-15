@@ -403,7 +403,7 @@ ul,li{
 }
 .page2 ul li:nth-child(3){
     width: 3.4rem;
-    height: .02rem;
+    height: .04rem;
     left: 2.7rem;
     top: 4.2rem;
     background: #ccc;

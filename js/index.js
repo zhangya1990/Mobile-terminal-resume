@@ -1,6 +1,12 @@
 //->REM响应式布局
 ~function (desW) {
     var winW = document.documentElement.clientWidth;
+    var winH = document.documentElement.clientHeight;
+    if(winH<=480){
+        document.documentElement.style.fontSize = winW / desW * 85 + "px";
+        $('.page1>h1>span').css({left:.4+'rem',bottom:.3+'rem'});
+        return;
+    }
     document.documentElement.style.fontSize = winW / desW * 100 + "px";
 }(640);
 
@@ -25,7 +31,6 @@ var mySwiper = new Swiper('.swiper-container', {
     },
     onSlideNextEnd: function () {
         step++;
-        console.log(step);
         if (step > 7) {
             step = 2;
         }
